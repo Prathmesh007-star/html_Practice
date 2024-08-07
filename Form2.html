@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<style>
+    table,td,th{
+        border: 1px solid black;
+        border-collapse: collapse;
+        background-color: rgb(191, 190, 190);
+        margin-left: 40px;
+        width: 400px;
+        height:40px;
+        
+    }
+</style>
+<body>
+<form>
+    <h1 style="margin-left: 40px;">Regestration Form</h1>
+    <table>
+        <tr>
+            <th>Enter Your First Name </th>
+            <td><input type="text" id="Firstname" placeholder="Enter Your First Name"></td><br>
+        </tr>
+        <tr>
+            <th>Enter Your Last Name</th>
+            <td><input type="text" id="Lastname"</td>
+        </tr>
+        <tr>
+            <th>Enter your Password</th>
+            <td><input type="password" id="password"></td>
+        </tr>
+        <tr>
+            <th>ReEnter your password</th>
+            <td><input type="password" id="password"></td>
+        </tr>
+        <tr>
+            <th>Enter your Email</th>
+            <td><input type="email" id="Email"></td>
+        </tr>
+        <tr>
+            <th>Enter Your Address</th>
+            <td><textarea name="Address" id="Address"></textarea></td>
+        </tr>
+        <tr>
+            <th>Select Your Gender</th>
+            <td><label for="Gender">Male</label><input type="radio" id="Gender" name="Gender"><label for="Gender">Female</label><input type="radio" id="Gender" name="Gender"></td>
+        </tr>
+        <tr>
+            <th>Select Your Hobbies</th>
+            <td><label for="Hoobie 1">Hoobie1</label><input type="checkbox" id="Hoobie1" name="Hoobie1">
+            <label for="Hoobie2">Hoobie2</label><input type="checkbox" id="Hoobie2" name="Hoobie2">
+            <label for="Hoobie3">Hoobie3</label><input type="checkbox" id="Hoobie3" name="Hoobie3"></td>
+        </tr>
+        <tr>
+            <td>Select DOB</td>
+            <td><input type="date" id="DOB" name="DOB"></td>
+        </tr>
+        <tr>
+            <td>Select Your Country</td>
+            <td><label for="Country"></label><select id="Country" name="Country">
+            <option value="Select Your Country" disabled selected>Select your Country</option>   
+            <option value="India">India</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="USA">USA</option>
+            <option value="Cannada">Cannada</option></select></td>
+        </tr>
+        <tr>
+            <td>Choose your files</td>
+            <td><input type="file" id="file" name="file"></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;"><input type="submit" value="Submit my data">
+                <input type="reset" value="reset my data"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
