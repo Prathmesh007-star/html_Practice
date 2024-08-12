@@ -1,0 +1,25 @@
+h1.heading{
+    border-top: 5px solid blue;
+    border-bottom: 5px solid blue;
+    color: navy;
+    text-align: center;
+}
+h1{
+    border-top: 5px solid blue;
+    border-bottom: 5px solid blue;
+    color: navy;
+}
+h1.pink{
+    border-top: 5px solid rgb(223, 99, 120);
+    border-bottom: 5px solid rgb(223, 99, 120);
+    color: rgb(244, 137, 155)
+}
+p{
+    color: blue;
+}
+body{
+    background-color: pink;
+}
+hr{
+    border:1px solid red;
+}

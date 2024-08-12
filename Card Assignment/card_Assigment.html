@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Card Assigmnet</title>
+</head>
+<style>
+    div.parent{
+        display: flex;
+    }
+    div.laptop{
+        border-radius: 30px;
+        width: 400px;
+        background-color: white;
+        margin: 50px;
+        height: 690px;
+    }
+    div.burger{
+        border-radius: 30px;
+        width: 400px;
+        background-color: white;
+        margin: 50px;
+        height: 690px;
+    }
+    div.automobile{
+        border-radius: 30px;
+        width: 400px;
+        background-color: white;
+        margin: 50px;
+        height: 690px;
+    }
+    .submit1{
+        background-color: skyblue;
+        color: white;
+        border-radius: 50px;
+        border: none;
+        padding: 10px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .submit2{
+        background-color: rgb(231, 231, 81);
+        color: white;
+        border-radius: 50px;
+        border: none;
+        padding: 10px;
+
+    }
+    body{
+        background-image: linear-gradient(to right, rgba(126, 139, 237), rgb(79, 92, 238));
+    }
+    p{
+        padding: 10px;
+    }
+    h1{
+        padding: 10px;
+    }
+    img.photo{
+        width: 50px;
+        border-radius: 50%;
+        float: left;
+    }
+    h3{
+        float: left;
+    }
+    .submit3{
+        background-color: red;
+        border-radius: 50px;
+        border: none;
+        width: 100px;
+        color: white;
+        padding: 10px;
+    }
+    .laptop:hover{
+        transform: scale(1.2);
+    }
+    .burger:hover{
+        transform: scale(1.2);
+    }
+    .automobile:hover{
+        transform: scale(1.2);
+    }
+</style>
+<body>
+    <div class="parent">
+        <div class="laptop">
+            <img src="image1.jpg" width="400px"><br><br>
+            <input type="submit" value="Technology" class="submit1">
+            <h1>What's New In 2024 Tech</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste alias expedita cumque facilis dignissimos
+                 perspiciatis adipisci delectus illum,excepturi perferendis, a at modi ducimus voluptates, 
+                 facere corporis molestias inventore odio?
+            </p><br><br>
+            <img src="pexels-photo-2379005.jpeg" class="photo">
+            <h3>Asheel Ahmed Siddqui</h3><br><br><br>
+            <h3 style="color: grey;">Today</h3>
+        </div>
+        <div class="burger">
+            <img src="burger.jfif" width="400px"><br><br>
+            <input type="submit" value="Food" class="submit2">
+            <h1>Delecious Food</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste alias expedita cumque facilis dignissimos
+                perspiciatis adipisci delectus illum,excepturi perferendis, a at modi ducimus voluptates, 
+                facere corporis molestias inventore odio?</p>
+            <img src="pexels-photo-775358 (2).webp" class="photo"><br>
+            <h3>Hassan Raza</h3><br><br><br>
+            <h3 style="color: grey; float:left;">2h ago</h3>
+        </div>
+        <div class="automobile">
+            <img src="automobile.jfif" alt="" width="400px" height="260px"><br><br>
+            <input type="submit" value="Automobile" class="submit3">
+            <h1>Race To Heart Content</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste alias expedita cumque facilis dignissimos
+                perspiciatis adipisci delectus illum,excepturi perferendis, a at modi ducimus voluptates, 
+                facere corporis molestias inventore odio?</p>
+            <img src="young-bearded-man-with-striped-shirt_273609-5677.avif" class="photo" height="50px">
+            <h3>Abdul Moiz</h3><br><br><br>
+            <h3 style="color: grey;">Yesterday</h3>
+        </div>
+    </div>
+    
+</body>
+</html>
