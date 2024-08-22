@@ -1,0 +1,27 @@
+.city{
+    background-color: deepskyblue;
+    color: white;
+    width: 200px;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+.floatl{
+    float: left;
+}
+.floatr{
+    float: right;
+}
+
+.header{
+    background-color: darkgray ;
+    color: white;
+    padding: 30px;
+}
+.Footer{
+    background-color: darkgray ;
+    color: white;
+    padding: 30px;
+    clear: both;
+
+}

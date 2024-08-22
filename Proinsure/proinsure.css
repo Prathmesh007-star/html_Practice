@@ -1,0 +1,126 @@
+.header{
+    padding: 16px 0;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pro{
+    font-size: 36px;
+    font-family: "DM Serif Display", serif;
+    color: #2d2640;
+    text-decoration: none;
+}
+nav{
+    font-size: 36px;
+    display: block;
+    text-decoration: none;
+}
+
+.align-start{
+    align-items: flex-start;
+}
+.box{
+    background-color: #2d2640;
+    padding: 60px 0;
+    color: #ffffff;
+    margin-top: 88px;
+    height: 600px;
+}
+h1{
+    padding-left: 40px;
+    margin-top: 16px;
+    color: white;
+    font-size: 56px;
+    line-height: 1.1;
+}
+.line{
+    width: 200px;
+    height: 2px;
+    background-color: #bcb8c4;
+    margin: 40px;
+}
+.para1{
+    color: #bcb8c4;
+    margin: 32px 0;
+    font-size: 18px;
+}
+.iamge1{
+    margin-bottom: -160px;
+    width: 100px;
+}
+.hero{
+    background-color: #2d2640;
+    padding: 60px 0;
+    color: #ffffff;
+    margin-top: 88px;
+}
+.hero-img{
+    margin-bottom: -160px;
+    width: 100%;
+}
+.para1{
+    flex:0 1 45%;
+}
+.about{
+    margin-top: 80px;
+}
+.padding{
+    padding: 80px 0;
+}
+.img100{
+    width: 100%;
+}
+.heading{
+    font-size: 48px;
+    color: #2d2640;
+}
+.text{
+    font-size: 20px;
+    line-height: 1.6;
+    color: #6e6b74;
+    margin: 24px 0;
+}
+.btn{
+    padding: 12px 18px;
+    color: #6e6b74;
+    border: 1px solid #6e6b74;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.btn-secondary{
+    border-color: #ffffff;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.btn:hover{
+    background-color: #09070e;
+    color: white;
+}
+.para2{
+   flex: 0 1 30%;
+}
+.icon-box{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #8ab4f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}

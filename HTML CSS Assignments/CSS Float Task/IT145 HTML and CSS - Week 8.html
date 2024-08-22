@@ -1,0 +1,1076 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0059)https://www.unm.edu/~tbeach/IT145/week08/index.html#pagetop -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>IT145 HTML and CSS - Week 8</title>
+
+	<link rel="stylesheet" type="text/css" href="./IT145 HTML and CSS - Week 8_files/base.css">
+    
+<style type="text/css">
+<!--
+
+h4 { color: #050; font-family: Arial, Helvetica, sans-serif; }
+.picright { float:right; }
+
+.floatpara { float:right; width:120px; background-color:lime; margin:0; }
+
+#side1 {
+	width: 150px;
+	height: 220px;
+	float: right;
+	overflow: auto;
+	background-color: lime;
+	}
+
+/* The three styles below ar for the picture scroller */
+
+#pix {
+	width:370px;
+	height:160px;
+	overflow:auto;
+	float: right;
+	margin: 0 0 10px 20px;
+	} /* pix is the id of the div that holds the picture paragraph */
+
+#pix p {
+	margin:0;
+	white-space:nowrap;
+	}
+	
+#pix img {
+	margin-right:10px;
+	border: none;
+	}
+
+#examplefit {
+	width: 300px;
+	margin-left: 50px;
+	margin-right: 50px;
+	background-color: lime;
+	}
+	
+#examplefit2 {
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: lime;
+	}
+	
+#examplepad {
+	padding: 0 20px 0 20px;
+	background-color: lime;
+	}
+
+.picfloatleft { float:left; }
+
+.clearstuff { clear: both; }
+
+.brdrExample { border: 2px solid blue; }
+
+.brdrEx2 { 
+	border-top: 6px double red; 
+	border-bottom: 6px double red; 
+	}
+
+.brdrEx3 { border: 9px solid red; padding: 4px; }
+.brdrEx4 { border: 9px dotted red; padding: 4px; }
+.brdrEx5 { border: 9px dashed red; padding: 4px; }
+.brdrEx6 { border: 9px double red; padding: 4px; }
+.brdrEx7 { border: 9px ridge red; padding: 4px; }
+.brdrEx8 { border: 9px groove red; padding: 4px; }
+.brdrEx9 { border: 9px inset red; padding: 4px; }
+.brdrEx10 { border: 9px outset red; padding: 4px; }
+
+.brdrThin { border: thin solid black; padding: 4px; }
+.brdrMedium { border: medium solid black;; padding: 4px; }
+.brdrThick { border: thick solid black;; padding: 4px; }
+
+
+.pic1 { vertical-align: baseline; }
+.pic2 { vertical-align: text-top; }
+.pic3 { vertical-align: text-bottom; }
+.pic4 { vertical-align: middle; }
+.pic5 { vertical-align: sub; }
+.pic6 { vertical-align: super; }
+.pic7 { vertical-align: top; }
+.pic8 { vertical-align: bottom; }
+.pic9 { vertical-align: -50%; }
+
+
+a.playdead { cursor: default; text-decoration: none; color: black; }
+
+
+.demo { height:6px; color:red; background-color:yellow; width:25%; margin-right:75%; margin-bottom:1.5em; }
+/* For formatting an <hr />.  The hr is by default horizontally centered.  Text-align does NOT work for positioning 
+a short hr to the left or right. You can float the hr left or right, but then you have to worry about clearing the 
+next element. Setting the margin opposite of the side you want the short hr moved to works well, as shown above. */
+
+.topbdr { border-top: 3px double gray; }
+
+
+/* For the relative positioning example */
+.yel { color: yellow; margin-bottom: 0; }
+
+.moved {
+	margin: 0;
+	position: relative;
+	top: -1.5em;
+	left: 11em;
+	}
+
+.notop { margin-top: 0; }
+
+
+/* For the absolute positioning example */
+#absExample { position:relative; background-color: white; padding: 10px; }
+
+.leftpic {
+	position: absolute;
+	top: 0;
+	left: -130px;
+	}
+
+#absExample p { margin: 0 0 10px 0; }
+	
+.TotoroAbs {
+	position: absolute;
+	top: 33em;
+	left: 24em;
+	z-index: 4;
+	} 
+	
+.chimpAbs {
+	position: absolute;
+	top: 28em;
+	left: 20em;
+	z-index: 3;
+	} 
+
+#leftbox {
+	width: 190px;
+	position: absolute;
+	top: 37em;
+	left: -220px;
+	background-color: yellow;
+	padding: 10px;
+	}
+
+#fixbox {
+	width: 70px;
+	height: 70px;
+	position: fixed;
+	top: 0; 
+	right: 0;
+	background-color: white;
+	padding: 4px;
+	}
+
+#fixbox p { margin: 0; text-align: center; }
+
+-->
+    </style>
+</head>
+
+<body>
+<div id="wrap">
+
+  <div id="header">
+    	<h1><a href="https://www.unm.edu/~tbeach/IT145/index.html">IT145 HTML and CSS — Fall 2013</a></h1>
+  </div> <!-- end header -->
+	
+	<div id="navi">
+		<p class="caltop"><strong><a href="https://www.unm.edu/~tbeach/IT145/index.html">Homepage</a></strong></p>
+		<p class="caltop">&nbsp;</p>
+		<!-- change link for current page below to say: class="current" href="index.html" -->        
+
+		<p class="caltop"><strong>Class Lectures and Assignments</strong></p>
+        <p class="cal"><strong>Aug</strong>
+			<a href="https://www.unm.edu/~tbeach/IT145/week01/index.html">&nbsp;19&nbsp;</a>
+			<a href="https://www.unm.edu/~tbeach/IT145/week02/index.html">&nbsp;26&nbsp;</a>
+        </p>
+        <p class="cal"><strong>Sept</strong>
+			<a href="https://www.unm.edu/~tbeach/IT145/holiday/index.html">&nbsp;2&nbsp;</a>
+            <a href="https://www.unm.edu/~tbeach/IT145/week03/index.html">&nbsp;9&nbsp;</a>
+			<a href="https://www.unm.edu/~tbeach/IT145/week04/index.html">&nbsp;16&nbsp;</a>
+			<a href="https://www.unm.edu/~tbeach/IT145/week05/index.html">&nbsp;23&nbsp;</a>
+            <a href="https://www.unm.edu/~tbeach/IT145/week06/index.html">&nbsp;30&nbsp;</a>
+		</p>
+		<p class="cal"><strong>Oct</strong>
+			<a href="https://www.unm.edu/~tbeach/IT145/week07/index.html">&nbsp;7&nbsp;</a>
+            <a href="https://www.unm.edu/~tbeach/IT145/holiday/index.html">&nbsp;14&nbsp;</a>
+			<a class="current" href="https://www.unm.edu/~tbeach/IT145/week08/index.html">&nbsp;21&nbsp;</a>
+            <a href="https://www.unm.edu/~tbeach/IT145/week09/index.html">&nbsp;28&nbsp;</a>
+		</p>
+  		<p class="cal"><strong>Nov</strong>
+			<a href="https://www.unm.edu/~tbeach/IT145/week10/index.html">&nbsp;&nbsp;4&nbsp;</a>
+			<a href="https://www.unm.edu/~tbeach/IT145/holiday/index.html">&nbsp;11&nbsp;</a>
+			<a href="https://www.unm.edu/~tbeach/IT145/week11/index.html">&nbsp;18&nbsp;</a>
+            <a href="https://www.unm.edu/~tbeach/IT145/week12/index.html">&nbsp;25&nbsp;</a></p>
+		<p class="cal"><strong>Dec</strong>
+			<a href="https://www.unm.edu/~tbeach/IT145/week13/index.html">&nbsp;&nbsp;2&nbsp;</a>
+			<a href="https://www.unm.edu/~tbeach/IT145/final/index.html">&nbsp;9&nbsp;</a>
+        </p>
+            
+            
+	  <p><a href="https://www.unm.edu/~tbeach/IT145/bytopic.html"><strong>Index by Topic</strong></a></p>
+		<p><a href="https://www.unm.edu/~tbeach/IT145/resources.html"><strong>Resources</strong></a></p>
+	  <p><a href="https://www.unm.edu/~tbeach/IT145/syllabus.pdf"><strong>Syllabus (PDF)</strong></a></p>
+		<p><a href="http://www.unm.edu/~tbeach"><strong>Instructor:</strong> T. Beach</a><br>
+		<a href="mailto:tbeach@unm.edu">tbeach@unm.edu</a></p>
+		<p><a href="http://www.la.unm.edu/"><strong>UNM-LA</strong></a></p>
+		<p style="text-align:center"><a href="http://www.la.unm.edu/"><img src="./IT145 HTML and CSS - Week 8_files/UNMLAlogo.gif" alt="UNM-LA logo"></a></p>
+	</div> <!-- end navi -->
+	
+	<div id="main">
+	<h2 id="pagetop">Week 8</h2>
+    <p class="asg"><a href="https://www.unm.edu/~tbeach/IT145/week08/index.html#asg"> * Assignment *</a></p>
+	<p><strong>Questions from last time?</strong></p>
+	<p><strong>Remember to have your Midterm ready at the start of class next week! It's
+	  30% of your course grade.</strong></p>
+	<p>&nbsp;</p>
+	<h2>Chapter 11: Layout with CSS</h2>
+	<h3>The CSS Box Model</h3>
+	<p>CSS treats all elements on your Web page as if they were contained in a box
+	  which has settings for its content area, paddings, borders, and margins
+	  as shown in this model:</p>
+	<p class="centr"><img src="./IT145 HTML and CSS - Week 8_files/boxmodel.gif" alt="CSS Box Model" width="411" height="274"></p>
+	<p>The content area might contain a paragraph, a span of text, an image, a division,
+	  or any other HTML element. The width and height of the content may
+	  depend on the rendering of the content (for example, the font, size, style,
+	  and line height of text are part of determining its rendered size of elements
+	  containing text), or it may be an intrinsic property of the content (such
+	  as the width and height of an image). You can also specify the width and
+	  height of sectioning elements such as divs, sections, articles, etc. </p>
+	<p>Outside the content area is the padding,
+	  which specifies the offset from the edge of the content to the border.
+	  The width of the padding can be controlled separately for the top, right,
+	  bottom, and left sides. Outside of the padding is the border (which can
+	  also have separate specifications for top, right, bottom, and left sides).
+	  The border may or may not be present, but it still represents the dividing
+	  line between the padding and margin even when it's not displayed. Outside
+	  the border is the margin area (which can also have separate
+	  specifications for top, right, bottom, and left sides).</p>
+	<p>The background color or background image of an element fills the content,
+	  padding, and border areas (it will show through a border that has gaps
+	  in it, such as a dashed border). The margin is transparent.</p>
+	<p>In HTML there are block-level elements (such as paragraphs and divisions
+	  that are formatted as boxes and which start on a new line), and there are
+	  inline elements (such as spans of text and images, which don't start a
+	  new line). Recall that HTML5 does not use the term "block-level" or "inline",
+	  but the concept is still valid, and I will use those terms. Some of the
+	  box model formatting does not apply to some inline elements (for example,
+	  changing the top and bottom margins of a span of text has no effect).</p>
+	<p>Cascading Style Sheet (CSS) formatting rules allow you to position the boxes
+	  on the page in many different ways, which is why we now use CSS to do the
+	  layout of Web pages (unlike the old days when Web authors often used HTML
+	  tables to control the layout of their Web pages). The promise of CSS layout
+	  was a longtime coming, because some browsers (especially old versions of
+	  Internet Explorer) did not fully or properly implement CSS positioning—but
+	  modern browsers do an excellent job of positioning. </p>
+	<p>&nbsp;</p>
+	<h3>Page Structure</h3>
+	<p>CSS positioning requires that you have a well-structured Web page. The reason
+	  that we have emphasized divisions (created with the &lt;div&gt; tag), sections
+	  (created with the &lt;section&gt; tag), articles (created with the &lt;article&gt; tag),
+	  and other sectioning elements (even though they visually haven't done anything
+	  for us up to now) is
+	  that by arranging your page with the content divided into these sectioning
+	  elements allows you to apply styles to each element and format different
+	  sections of the page as desired.</p>
+	<p>The page you are reading, for example, has a <em>wrap</em> division (a div
+	  with ID="wrap") that controls the width of the page and centers it in
+	  the window, a <em>header</em> division to hold the class title (don't confuse
+	  this with the head of the HTML document), a <em>navi</em> division that holds
+	  the links for the web site, and a <em>main</em> division that holds most of
+	  the content.</p>
+	<p>&nbsp;</p>
+	<h3>HTML5 Structure in Older Browsers</h3>
+	<p>The new structural elements introduced in HTML5 (section, article, etc.)
+	  can cause problems in older browsers that were written before HTML5, since
+	  the old browsers don't know what those tags mean. Happily, it's not hard
+	  to get around this. </p>
+	<p>When most browsers run into HTML tags they does not know,
+	  they just treat the tag as a inline element (like a &lt;span&gt;) but otherwise
+	  ignore it. But, we want the old browsers to treat the new structural elements
+	  as block-level elements so that they get space before and after them automatically,
+	  as they do in modern browsers. We can do this by adding the following style
+	  to your page's CSS style sheet (or to the external style sheet used by
+	  all of your pages):</p>
+	<p class="indent"><strong>article, aside, figcaption, figure, footer, header, hgroup, menu, nav, section
+	  { display: block; }</strong></p>
+	<p>This makes the browsers treat those new elements as block-level elements.</p>
+	<p>The other problem is older versions of Internet Explorer (prior to IE9) --
+	  these older versions of IE will ignore CSS formatting you apply to unknown
+	  elements. But you can get around this by putting the line below into the
+	  &lt;head&gt;...&lt;/head&gt; element of your Web page (either above or below your CSS
+	  style sheet or the link to your external CSS style sheet):</p>
+	<p><strong> &lt;!--[if lt IE 9]&gt;<br>	  &lt;script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"&gt;&lt;/script&gt;<br>
+&lt;![endif]--&gt;</strong></p>
+	<p>See page 287 in the textbook if you are curious about how this works. Otherwise,
+	  just put it into the head of your Web page.</p>
+	<p>&nbsp;</p>
+	<h3>Floating Elements</h3>
+	<img src="./IT145 HTML and CSS - Week 8_files/totoro.jpg" alt="Totoro" width="96" height="123" class="picright">
+    <p>Remember
+	  how we were able to align images to the left or right, and the rest of
+	  the page content would flow around the image (sort of like what you see
+	  at the right here). Well, the align attribute of the &lt;img&gt; tag is now
+	  deprecated, but you can accomplish the same thing using the CSS <strong>float</strong> property.
+	  The image on the right, in fact, has <em>class="picright"</em> as
+	  an attribute, and i created a style that I named .picright that has
+	  the following style rule:</p>
+	<p class="indent">.picright { <strong>float:right</strong>; }</p>
+	<p>You can float elements (not just images) to either the <strong>left</strong> or <strong>right</strong> using
+	  either of those two values of the float property. The float property is
+	  NOT inherited.</p>
+	<p class="floatpara">I am a paragraph that is floated to the right. I have style
+	  <strong>floatpara</strong> assigned to me. What fun!</p>
+	<p>As mentioned
+	  above, you
+	  can float other elements besides images to the left or right. At the right
+	  of this paragraph I have floated another paragraph of text. That
+	  paragraph is actually immediately before THIS paragraph (the one you are
+	  reading here) in the HTML for this Web page. The class style of floatpara
+	  (just a name I made up) is applied to that paragraph. I also made its background
+	  color <em>lime</em> so that you could easily distinguish it from this paragraph.
+	  When you float a paragraph like that, you must specify how wide the floated
+	  paragraph should be (more on setting widths in a bit). Also, I set the
+	  margins of the floated paragraph to zero (more on setting margins in a
+	  bit). If you don't set the top margin to zero, the floated paragraph would
+	  not line up with the paragraph to its left (because it would get extra
+	  space at its top in many browsers). Here is the class style I used to float
+	  the paragraph:</p>
+	<p class="indent">.floatpara { <strong>float:right</strong>; <strong>width:150px</strong>; <strong>margin:0</strong>;
+	  background-color:lime; }</p>
+	<p class="indent">&nbsp;</p>
+	<h3>Clearing Floated Elements</h3>
+	<p>You can run into a problem where you need to clear content past elements
+	  that have been floated to the right or left. <span class="graytext">(In the
+	  old days, this was accomplished using the "clear" attribute of the &lt;br&gt;
+	  element...but that attribute is now deprecated.)</span> We use the CSS
+	  <strong>clear</strong> property, which can have the values <strong>left</strong>, <strong>right</strong>,
+	  or
+	  <strong>both</strong>. Example:</p>
+	<img src="./IT145 HTML and CSS - Week 8_files/chimp.jpg" alt="chimp" width="96" height="123" class="picfloatleft">
+	<p>This is a short paragraph with a left-floated image before it. This text
+	  is too short to clear beyond the image. So...</p>
+      <img src="./IT145 HTML and CSS - Week 8_files/totoro.jpg" alt="Totoro" width="96" height="123" class="picfloatleft">
+	<p>The next left-floated image buts up against the first image as it tries to
+	  float to the left side of its containing element.</p>
+	<p class="clearstuff">&nbsp;</p>
+	<p>To fix this, I made a style named <em>clearstuff</em> that has the property
+	  <strong>clear:both</strong> so that any element I apply the class .clearstuff
+	  to will wait until it's beyond any floating elements on both sides before
+	  appearing on the page. In the fixed example below, I inserted a line break
+	  at the end of the paragraphs and applied .clearstuff to it (the tag is &lt;br
+	  class="clearstuff" /&gt; ).
+	  Often you would just apply the .clearstuff style to the next element
+	  (such as a div that you wanted to start clear of any floats), but in the
+	  case below, if I apply .clearstuff to the Totoro image, the following paragraph
+	  of text still does not clear the previous floated elements. So in this
+	  case it was easier to put in a line break and apply the style.</p>
+      
+	<img src="./IT145 HTML and CSS - Week 8_files/chimp.jpg" alt="chimp" width="96" height="123" class="picfloatleft">
+	<p>This is a short paragraph with a left-floated image before it. This text
+	  is too short to clear beyond the image. So I put a line break at the end
+	  of this paragraph with .clearstuff applied.<br class="clearstuff">
+	</p>
+	
+    <img src="./IT145 HTML and CSS - Week 8_files/totoro.jpg" alt="Totoro" width="96" height="123" class="picfloatleft">
+    <p>So now the second floated image can float all the way to the left side
+      of its container without bumping into the other floated image. I also have
+      another line break &lt;br class="clearstuff" /&gt; at the end
+      of this paragraph that
+      clears before the next content.<br class="clearstuff">
+    </p>
+	<p class="clearstuff">&nbsp;</p>
+	<h3>Width and Height</h3>
+	<div id="side1">
+	  <p>This text is in a div with id style #side1 applied. It has <strong>width: 150px</strong> and <strong>height: 220px</strong>. In case you are wondering about
+      the cool scroll bar, it is there because of the way I have handled the overflow in the style that formats this div (see further down the page).</p>
+      <p>Since this is a div, it can hold many paragraphs (this is a second one),
+        headings, and images -- and all the other stuff you can put on a Web
+        page."</p>
+      <p><img src="./IT145 HTML and CSS - Week 8_files/totoro.jpg" alt="Totoro" width="96" height="123"> Hi!</p>
+	  </div>
+	<p>You specify the width and height of an element using the <strong>width</strong> and <strong>height</strong> properties.
+	  The values for these properties can be expressed in lengths with units
+	  (such as <strong>200px</strong> or <strong>15em</strong>), or they can be
+	  expressed as percentages (such as <strong>70%</strong>). If you use percentages,
+	  these are relative to the size of the parent element that contains the
+	  sized object (the parent's size is 100%). If you don't specify a width
+	  or height, the value <strong>auto</strong> is assumed. For the little green
+	  paragraph in the previous section, I did not specify a height because I
+	  was not sure how much room the paragraph would need (since this depends
+	  on the font settings).</p>
+	<p>The element at the right here is a div that has both height and width specified.
+	  That paragraph is located in the HTML code just below the "Width and
+	  Height" heading. The style for that div is this ID style:</p>
+	<p class="indent">#side1 {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>width: 150px</strong>;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>height: 220px</strong>;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;float: right;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;overflow: auto;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color: lime;<br>
+}</p>
+	<p>Note that the height and width of an element do NOT include the padding,
+	  border, and margins. Therefore, an element on the page is going to take
+	  up more space than just the height and width would indicate. If you don't
+	  specify a width for an element (and it doesn't have an intrinsic width,
+	  like an image does), the width will be calculated by subtracting the left
+	  and right margins and paddings from the width of the parent element.</p>
+	<p>You can use the <strong>min-height</strong> of <strong>min-width</strong> properties
+	  to specify the minimum height or width an element can have. You can use
+	  the <strong>max-height</strong> of <strong>max-width</strong> properties to
+	  specify the maximum height or width an element can have. So, for example,
+	  you could set the width of an element to be 50% (of the parent element),
+	  but also set a min-width and/or max-width to keep the element from getting
+	  to narrow or too wide as the browser window is resized.</p>
+	<p>The height and width properties are NOT inherited. </p>
+	<p>&nbsp;</p>
+	<h3>Overflow</h3>
+	<p>What happens if you specify a width and height for an element (such as a
+	  paragraph or div or section) that is not large enough to display all of
+	  the contents of the element? This is what happened in the <em>div#side1</em> example
+	  above. So what happens to the overflow material?</p>
+	<p>You control what happens to the excess content with the <strong>overflow</strong> property.
+	  The overflow property can have the values: <strong>visible</strong>, <strong>hidden</strong>, <strong>scroll</strong>,
+	  or
+	  <strong>auto</strong>. The value <strong>visible</strong> is the default,
+	  and it will allow the height of the element to expand in order to display
+	  all of the content. The value <strong>hidden</strong> will keep the element
+	  at the width and height specified, and will chop off the display of the
+	  content (only showing what fits). This may seem to be a bad thing, since
+	  the user will not be able to see the content, but the example on page 320
+	  of the textbook shows how this can be useful (the string of tiny images
+	  fills a paragraph across a page, and if the page is made wider by resizing
+	  the window, more images that were initially hidden will appear to continue
+	  filling across the page). </p>
+	<p>The value <strong>scroll</strong> for the overflow property will show vertical
+	  and horizontal scroll bars in the element so that the user can scroll to
+	  see the hidden content. Note that this choice uses space for both scroll
+	  bars even if one or both is not needed. The value <strong>auto</strong> will
+	  show scroll bars only if needed to see any hidden content.</p>
+	<div id="pix">
+      <p>
+            <a href="http://www.nara.jp/"><img src="./IT145 HTML and CSS - Week 8_files/Japan01.jpg" alt="JapanSlide" width="180" height="135"></a>
+            <a href="http://en.wikipedia.org/wiki/Kiyomizu-dera"><img src="./IT145 HTML and CSS - Week 8_files/Japan02.jpg" alt="JapanSlide" width="180" height="135"></a>
+            <img src="./IT145 HTML and CSS - Week 8_files/Japan03.jpg" alt="JapanSlide" width="180" height="135">
+            <img src="./IT145 HTML and CSS - Week 8_files/Japan04.jpg" alt="JapanSlide" width="180" height="135">
+            <img src="./IT145 HTML and CSS - Week 8_files/Japan05.jpg" alt="JapanSlide" width="180" height="135">
+            <img src="./IT145 HTML and CSS - Week 8_files/Japan06.jpg" alt="JapanSlide" width="180" height="135">
+            <img src="./IT145 HTML and CSS - Week 8_files/Japan07.jpg" alt="JapanSlide" width="180" height="135">
+            <img src="./IT145 HTML and CSS - Week 8_files/Japan08.jpg" alt="JapanSlide" width="180" height="135">
+            <img src="./IT145 HTML and CSS - Week 8_files/Japan09.jpg" alt="JapanSlide" width="180" height="135">
+            <img src="./IT145 HTML and CSS - Week 8_files/Japan10.jpg" alt="JapanSlide" width="180" height="135">
+            <img src="./IT145 HTML and CSS - Week 8_files/Japan11.jpg" alt="JapanSlide" width="180" height="135">
+            <img src="./IT145 HTML and CSS - Week 8_files/Japan12.jpg" alt="JapanSlide" width="180" height="135">
+            <img src="./IT145 HTML and CSS - Week 8_files/Japan13.jpg" alt="JapanSlide" width="180" height="135">
+            <img src="./IT145 HTML and CSS - Week 8_files/Japan14.jpg" alt="JapanSlide" width="180" height="135">      </p>
+      </div>
+          <p class="just">In the example I have at the right, there is a div
+            that contains a paragraph with a line of 14 images. The white-space
+            property of that paragraph is set to no-wrap, so the images don't
+            break onto multiple lines. The div has its overflow property set
+            to auto, so the scroll bar appears at the bottom allowing the user
+            to scroll to see all of the images. I made the images inside the
+            div have no border so that no blue border would show up on the images
+            when they are links (I didn't actually put links on all of them).</p>
+          <p class="just">The styles used to make the scrolling picture box above
+            are shown below:</p>
+          <p class="indent">#pix {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width:370px;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;height:160px;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;overflow:auto;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;float: right;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;margin: 0 0 10px 20px;<br>
+          } /* pix is the id of the div that holds the picture paragraph */</p>
+          <p class="indent">#pix p {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;margin:0;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;white-space:nowrap;<br>
+          }<br>
+          <br>
+          #pix img {<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;margin-right:10px;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border: none;<br>
+          }</p>
+          <p class="just">&nbsp;</p>
+      <p class="just">The overflow property is NOT inherited.</p>
+      <p>&nbsp;</p>
+      <h3>Margins</h3>
+      <p>The margins provide transparent space between elements. The margins
+        on the top, right, bottom, and left can be set individually. Margins
+        can be specified in lengths with units (such as 10px or 0.5em) or as
+        percentages of the size of the parent element (such as 10%). If a zero
+        margin is desired, no unit need be given. A margin can also be set
+        to auto if you want it to take up the rest of the available space once
+        width and the opposite margin are specified. (If you look at the picture-scroller
+        div above, you can see that I put left and bottom margins of 20px on
+        it to keep the text from butting right up against it.)</p>
+      <p>The <strong>margin</strong> property can be used to set multiple margins
+        at once. Examples:</p>
+      <p class="indent">body { <strong>margin: <span class="redbold">0</span></strong>; }</p>
+      <p>The example above sets all margins of the body to zero. If only one
+        value is given, it applies to all four margins.</p>
+      <p class="indent">#footer { <strong>margin: <span class="redbold">5px 15px</span></strong>; } </p>
+      <p>The example above would set the top and bottom margins to 5px, and the
+        left and right margins to 15px. When two values are given they apply
+        to top/bottom and right/left.</p>
+      <p class="indent">#navi { <strong>margin: <span class="redbold">0 1.2em 10px</span></strong>; }</p>
+      <p>The example above would set the top margin to zero, the right and left
+        margins to 1.2em, and the bottom margins to 10px. When three values are
+      given they apply to top, right/left, and bottom.</p>
+      <p class="indent">#sidebar { <strong>margin: <span class="redbold">5px 10px
+            20px 600px</span></strong>; }</p>
+      <p>The example above would set the top margin to 5px, the right margin
+        to 10px, the bottom margin to 20px, and the left margin to 600px. When
+        four values are given they apply to top, right, bottom, and left, in
+        that order. You can remember this order because it goes clockwise from
+        the top. Or, you can note that &nbsp;<strong>t &nbsp;r &nbsp;b &nbsp;l</strong> &nbsp;is the word "trouble" without
+        any vowels, if that helps anyone who has trouble remembering the order.</p>
+      <p>You can also set individual margins as in these examples:</p>
+      <p class="indent">*:first-child { <strong>margin-top: 0</strong>; }</p>
+      <p class="indent">#navbar { <strong>margin-right: 2em</strong>; }</p>
+      <p class="indent">.floatrightpic { <strong>margin-left: 10px</strong>;&nbsp; <strong>margin-bottom:
+          10px</strong>;
+        }</p>
+      <p>When one element is	below another (such as a paragraph following
+        an h1 heading line), only the larger of the two abutting margins (either
+        the bottom of the h1 or the top of the paragraph) will be used. This
+        is called "margin collapse." This does NOT happen with left and right
+        margins.</p>
+      <p>If you specify the width, left margin, and right margin of an element,
+        and it turns out not to fit exactly into the size of the parent element,
+        then the right margin will default to auto and will expand or contract
+        to make the element fit, if possible (if not possible, you will get overflow).
+        Example:</p>
+      <div id="examplefit">
+        <p>This div has a width of 300px, and both left and right margins set
+          to 50px (and there is no padding or border). You can see that the right
+          margin has come out larger than 50px.</p>
+      </div>
+      <p>You can center an element horizontally within another element by setting
+        a width, and setting both the left and right margins to <strong>auto</strong>.
+        The two side margins will share the available space equally. Very useful:</p>
+      <div id="examplefit2">
+        <p>This div has a width of 300px, and both left and right margins set
+          to <strong>auto</strong>. That centers this div horizontally within
+          its parent the <em>main</em> div of this page.</p>
+      </div>
+      <p>Because block-level elements have default margins on top, you will often
+        need to set a top margin to zero to avoid some spacing issues (especially
+        since some browsers will put in the default space in some situations
+        where other browsers will not; the only way to be sure getting the same
+        result in all browsers is to actually specify a margin, either zero or
+      some other value so they all use the same value).</p>
+      <p>The margin property is NOT inherited.</p>
+      <p>&nbsp;</p>
+      <h3>Padding</h3>
+      <p>You add padding to an element with the <strong>padding</strong> property
+        (or you can set padding for an individual side by using <strong>padding-top</strong>,
+        or <strong>padding-right</strong>, or <strong>padding-bottom</strong>,
+        or <strong>padding-left</strong>). The width of the padding is specified
+        as a length with units (such as <strong>10px</strong> or <strong>2em</strong>)
+        or percentage (such as <strong>2%</strong>, where this percentage is
+        relative to the size of the parent element).</p>
+      <p>When using the padding property, you can specify 1, 2, 3, or 4 values,
+        and it works in the same way as it did with margins: one given value
+        would apply to all padding sides; two values given apply to top/bottom
+        and right/left; three values given apply to top, right/left, and bottom;
+        four values given apply to top, right, bottom, left (<span class="redbold">tr</span>ou<span class="redbold">bl</span>e).</p>
+      <p>Any background color fills the content area AND the padding area (and
+        the border, if there are any transparent areas of the border). Margins
+        are transparent.</p>
+      <p>Example: The div below has left and right padding so that the text does
+      not but right up against the edge of the area background color.</p>
+      <div id="examplepad">
+        <p class="just">This div has no margins or border. The top and bottom
+          padding are set to a value of zero. The left and right padding are
+          set to 20px. This paragraph is justified so that you can better see
+          where the content area ends. The padding was specified in the style
+          rule with the declaration <strong>padding: 0 20px 0 20px</strong> </p>
+        <p class="just">Do you see the gap between this div and the edge of
+          the <em>main</em> div of this page on the right? That space is there
+          because the <em>main</em> div has some padding.</p>
+      </div>
+      <p>The padding property is NOT inherited.</p>
+      <p>&nbsp;</p>
+      <h3>Borders</h3>
+      <p>You can add borders to an element using the <strong>border</strong> property.
+        This is a combined property that sets the <strong>border-width</strong>, <strong>border-style</strong>,
+        and <strong>border-color</strong> properties in one step, like this:</p>
+      <p class="indent">.brdrExample { <strong>border: 2px solid
+      blue;</strong> }</p>
+      <p class="brdrExample">This paragraph has the style shown above applied
+        to it. If you don't want the border to but right up against the text
+        like this, simply add padding to the element (as in the next three examples
+        below). </p>
+      <p>The border width can be specified in length values with units (such
+        as <strong>1px</strong> or <strong>.2em</strong>), or you can use the preset values <strong>thin</strong>, <strong>medium</strong>, or <strong>thick</strong>:</p>
+      <p class="brdrThin">This has a thin border</p>
+      <p class="brdrMedium">This has a medium border</p>
+      <p class="brdrThick">This has a thick border</p>
+      <p class="graytext">If you use the separate properties (<strong>border-width</strong>, <strong>border-style</strong>,
+      and <strong>border-color</strong>) to set borders in an element, don't
+      forget to include <strong>border-style</strong> because it has a default
+      of <strong>none</strong>, so no border would show up without it.</p>
+      <p class="graytext">&nbsp;</p>
+      <p>It is often useful to set the properties of of just some of the four
+        borders of a element separately. his can be done with the <strong>border-top</strong>,
+        <strong>border-right</strong>, <strong>border-bottom</strong>, or <strong>border-left</strong>        properties.
+        Here is an example:</p>
+      <p class="indent">.brdrEx2 {<br>
+      <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border-top: 6px double
+      red</strong>; <br>
+      <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border-bottom: 6px double red</strong>; <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+      <p class="brdrEx2">This paragraph uses the style .brdrEx2 shown
+        above.</p>
+      <p>&nbsp;</p>
+      <p>The <strong>border-style</strong> property can have values of <strong>solid</strong>, <strong>dotted</strong>, <strong>dashed</strong>,
+        <strong>double</strong>, <strong>ridge</strong>, <strong>groove</strong>, <strong>inset</strong>, <strong>outset</strong>,
+        or <strong>none</strong> as shown in the examples below (all of which have 9px red borders.
+        I also added some padding):</p>
+      <p class="brdrEx3">This has a solid border</p>
+      <p class="brdrEx4">This has a dotted border</p>
+      <p class="brdrEx5">This has a dashed border</p>
+      <p class="brdrEx6">This has a double border</p>
+      <p class="brdrEx7">This has a ridge border</p>
+      <p class="brdrEx8">This has a groove border</p>
+      <p class="brdrEx9">This has a inset border</p>
+      <p class="brdrEx10">This has a outset border</p>
+      <p>Some of these styles only work well with fairly thick borders, and the
+        shaded ones (the last four) may not work well in some browsers if the
+      color is too dark.</p>
+      <p>You can also use properties that target just one property of a specific
+        border by using things like <strong>border-bottom-style:
+        solid;</strong> &nbsp;or &nbsp;<strong>border-left-color:
+        blue;</strong>&nbsp;&nbsp;but I generally find that either setting all borders at once,
+        or setting individual borders handles the cases I need.</p>
+      <p>Borders are NOT inherited.</p>
+      <p>&nbsp;</p>
+      <h3>Vertical Alignment of Elements in Text</h3>
+      <p>Remember the align attribute of the &lt;img&gt; tag could also be used to
+        specify the vertical alignment of the image when it was in a line of
+        text? Well, that is also deprecated now, so instead you use the CSS <strong>vertical-align</strong>        property.</p>
+      <p>The image <img src="./IT145 HTML and CSS - Week 8_files/blue2.gif" alt="blue" width="36" height="36" class="pic1"> in
+        this line has <strong>vertical-align</strong>:<strong> baseline</strong> set
+        with a style.</p>
+      <p>The image <img src="./IT145 HTML and CSS - Week 8_files/blue2.gif" alt="blue" width="36" height="36" class="pic7"> in
+        this line has <strong>vertical-align</strong>:<strong> top</strong> set
+      with a style.</p>
+      <p>The image <img src="./IT145 HTML and CSS - Week 8_files/blue2.gif" alt="blue" width="36" height="36" class="pic2"> in
+        this line has <strong>vertical-align</strong>:<strong> text-top</strong> set
+      with a style.</p>
+      <p>The image <img src="./IT145 HTML and CSS - Week 8_files/blue2.gif" alt="blue" width="36" height="36" class="pic4"> in
+        this line has <strong>vertical-align</strong>:<strong> middle</strong> set
+        with a style.</p>
+      <p>The image <img src="./IT145 HTML and CSS - Week 8_files/blue2.gif" alt="blue" width="36" height="36" class="pic3"> in
+        this line has <strong>vertical-align</strong>:<strong> text-bottom</strong> set
+      with a style.</p>
+      <p>The image <img src="./IT145 HTML and CSS - Week 8_files/blue2.gif" alt="blue" width="36" height="36" class="pic8"> in
+        this line has <strong>vertical-align</strong>:<strong> bottom</strong> set
+      with a style.</p>
+      <p>The image <img src="./IT145 HTML and CSS - Week 8_files/blue2.gif" alt="blue" width="36" height="36" class="pic6"> in
+        this line has <strong>vertical-align</strong>:<strong> super</strong> set
+      with a style.</p>
+      <p>The image <img src="./IT145 HTML and CSS - Week 8_files/blue2.gif" alt="blue" width="36" height="36" class="pic5"> in
+        this line has <strong>vertical-align</strong>:<strong> sub</strong> set
+        with a style.</p>
+      <p>The image <img src="./IT145 HTML and CSS - Week 8_files/blue2.gif" alt="blue" width="36" height="36" class="pic9"> in
+        this line has <strong>vertical-align</strong>:<strong> -50%</strong> set
+      with a style.</p>
+      <p>There are subtle differences between some of these alignments, and they
+        may result in slightly different positionings in different browsers.
+        The percentage value can be either positive (upward) or negative (downward).</p>
+      <p>&nbsp;</p>
+      <h3>Avoiding Deprecated Properties in HTML</h3>
+      <p><strong>Images:</strong> Now we know enough CSS formatting to avoid
+        using any deprecated attributes for the &lt;img&gt; tag. Instead of align="right"
+        or align="left", you would use float:right or float:left in
+        a style applied to the image. The vertical-align options in the previous
+        section replace the function of all the other values of the &lt;img&gt; tag's
+        align attribute. Instead of using the deprecated hspace or vspace attributes
+        of the &lt;img&gt;
+        tag, use CSS margins to move the text away from an image (and you can
+        even control the margins on all sides separately, which hspace and vspace
+        did not allow you to do). Instead of the deprecated border attribute
+        of &lt;img&gt;,
+        use CSS border styles. In particular, you can use the CSS style <strong>img
+        { border: none; }</strong> to prevent the default link borders from showing
+        up around images that are used as links.</p>
+      <hr>
+      <p><strong>Horizontal Rules: </strong>All of the attributes of the &lt;hr
+        /&gt; tag are deprecated (but the tag itself is still valid). The &lt;hr
+        /&gt; is pretty plain with no attributes (see the horizontal rule right
+        above this paragraph), but you can use CSS properties to format horizontal
+        rules, and even do things with color that HTML could not (although
+        how the rule looks may depend on your browser). Also, it is not as straightforward
+        to get the horizontal rule aligned left or right. Here's an example:</p>
+      <p class="indent">.demo { height:6px; color:red; background-color:yellow;
+        width:25%; margin-right:75%; margin-bottom:1.5em; }</p>
+      <hr class="demo">
+      <p>The horizontal rule above has class="demo"— the style rule
+        for that class is shown above.</p>
+      <p>Some people prefer to do away entirely with using the &lt;hr /&gt; tag
+        and make their horizontal lines with borders. The paragraph below this
+        one is blank (except for a non-breaking space) and I have set its top
+        border with the style rule below:</p>
+      <p class="topbdr">&nbsp;</p>
+      <p class="indent"><strong>.topbdr { border-top: 3px double
+        gray; }</strong></p>
+      
+      <p>&nbsp;</p>
+      <h3>Cursor Shape</h3>
+      <p>Also covered in this chapter of the textbook is the CSS property to
+        control the shape of the mouse pointer (<strong>cursor</strong>). There
+        are several choices of cursor shape, but most of these are only useful
+        in conjunction with javascript programs. Two useful ones to know are
+        the <strong>default </strong>shape (the slanted arrow) and the <strong>pointer </strong>shape
+        (the hand with its index finger out that usually appears over links).
+        If you want a link to NOT show the cursor as the pointer hand (for example,
+        you may want to do this for the link to the current page so that users
+        are less likely to click the link) you can do this:</p>
+      <p class="indent">a.playdead { <strong>cursor: default</strong>; text-decoration:
+        none; color: black; }</p>
+      <p>The last word in this sentence is a <a href="https://www.unm.edu/~tbeach/IT145/index.html" class="playdead">link</a></p>
+      <p>...but it doesn't look like a link, and the cursor does not change over
+        it.</p>
+      <p>So you could repeat the same menu on many pages, and simply make the
+        link that belongs to the current page look and act differently with a
+        special class style applied to it. For example:</p>
+      <p><strong><a href="https://www.unm.edu/~tbeach/IT145/index.html">Home</a> | <a href="https://www.unm.edu/~tbeach/IT145/week05/index.html">Week
+      5</a> | <a href="https://www.unm.edu/~tbeach/IT145/week06/index.html">Week 6</a> | <a href="https://www.unm.edu/~tbeach/IT145/week07/index.html">Week
+      7</a> | <a href="https://www.unm.edu/~tbeach/IT145/week08/index.html" class="playdead">Week 8</a> | <a href="https://www.unm.edu/~tbeach/IT145/week09/index.html">Week 9</a></strong></p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <h3>Positioning</h3>
+      <p>Now we get to the fun part: positioning elements on your Web pages with
+        CSS. Some layouts use the float property (which we discussed above) to
+        arrange content on a page, and we will see examples of that. But first
+        we have to discuss the other positioning that CSS can do with its <strong>position</strong>,
+        <strong>top</strong>, <strong>bottom</strong>, <strong>right</strong>,
+        and <strong>left</strong> properties.</p>
+      <p>Normally, elements appear on your Web page in the order you have them
+        in the HTML code of the page. This default behavior is called <strong>static</strong>        positioning.
+        Elements can also be positioned as relative, absolute, or fixed (these
+        are all values of the <strong>position</strong> property).</p>
+      <h4>Relative Positioning</h4>
+      <p>If you apply <strong>position:relative</strong> to an element, you can
+        specify how to move it <em>relative to the place it would appear in
+        the static (default) flow of the page</em>. The rest of the elements
+        in the static flow of the page do not shift position, and the place where
+        the positioned element came from would have a gap left behind as if the
+        element were still there. This can be used to do things like this:</p>
+      <h1 class="yel">Bananas!</h1>
+      <p class="moved">A fun yellow fruit!</p>
+      <p class="notop">The banana is your friend. This would be a paragraph about
+        the wonders of bananas, except this is just an example. </p>
+      <p class="notop">&nbsp;</p>
+      <p class="notop">In the example above, the word "Bananas!" is an h1 heading.
+        The line "A fun yellow fruit" is a paragraph that was originally below
+        the h1, but has been repositioned to follow the h1 using this style:</p>
+      <p class="indent">.moved {<strong><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;margin: 0;<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;position: relative;<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;top: -1.5em;<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;left: 11em;<br>
+  </strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+      <p>The style changes the location of the paragraph by moving its <strong>top</strong> upward
+        by <strong>1.5em</strong> (the negative causes it to move UP), and moves
+        its <strong>left</strong> edge
+        in by <strong>11em</strong> (these are both relative to where it would
+        have been in the default static flow of the page). I could also have
+        specified the shift based on the original position of the bottom edge
+        of the paragraph, or the the right edge of the paragraph. You use either
+        <strong>top</strong> or <strong>bottom</strong>, and either <strong>left</strong> or <strong>right</strong> —
+        just one from each pair). I used ems here instead of pixels so
+        that the spacing would adjust properly if the font size is changed. You
+        can also specify the shift in <strong>%</strong> (percent of the parent
+        element's size).</p>
+      <p>Unfortunately, you see the blank space that the paragraph left behind
+        (even though I tried to minimize it by making all the margins involved
+        zero. Because this gap gets left behind, <strong>position:relative</strong> is a pretty
+        lame tool for positioning elements. BUT, it has a very important side
+        effect when used in conjunction with absolute positioning (see below).</p>
+      <p>&nbsp;</p>
+      <h4>Absolute Positioning</h4>
+      <p>If you apply <strong>position:absolute</strong> to an element, that
+        element is removed from the static flow of the page (there is no gap
+        left behind—the later items just move up to fill the gap), and you can
+        specify the absolute position of the <strong>top</strong> (or <strong>bottom</strong>)
+        and <strong>left</strong> (or <strong>right</strong>)
+        edge of the element. These positions are either:</p>
+      <p>a) relative to the body of the page, or</p>
+      <p>b) relative to the most recent ancestor that has any positioning other
+        than static assigned to it.*</p>
+      <p>*Note: This is the important use of <strong>position:relative</strong> —
+        You can set a parent to use position:relative (but <em>don't</em> actually
+        move it with a top, left, bottom, or right property), and then any descendents
+        of that parent that uses absolute positioning will have its positions
+        measured from the edges of the parent element.</p>
+      <div id="absExample"><img src="./IT145 HTML and CSS - Week 8_files/totoro.jpg" alt="Totoro" width="96" height="123" class="leftpic">
+        <p>Here is an example of absolute positioning. This section (which has
+          a white background so that you can see it) contains an image of Totoro
+          and then these paragraphs of text. The image has the style .leftpic
+          applied, which is defined by the CSS style rule below:</p>
+        <p><strong>.leftpic {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;position: absolute;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;top: 0;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;left: -130px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</strong></p>
+        <p>This style absolutely positions the Totoro image (relative to its
+          parent div, remember, because that div has position:relative set for
+          it in a style) so that the top of the image is at the same vertical
+          position as the top of the div, and so that the left edge of the Totoro
+          image is 130px to the left of the left edge of the div (the negative
+          value moves the element to the left, a positive value moves it to the
+          right; a negative value for top would have moved it up, and a positive
+        value would have moved it down).</p>
+          
+        <img src="./IT145 HTML and CSS - Week 8_files/totoro.jpg" alt="Totoro" width="96" height="123" class="TotoroAbs">
+        <img src="./IT145 HTML and CSS - Week 8_files/chimp.jpg" alt="chimp" width="96" height="123" class="chimpAbs">
+        
+        <p>As you can see, absolute positioning is cool. The moved element did
+          not leave a gap, and it let me move the image into an otherwise unused
+          part of my page.</p>
+        <p>Another example can be seen with the two images
+          in the space next to the styles below. Those images are really in the
+          HTML flow right above this paragraph, but they have been repositioned
+          with these styles:</p>
+        <p><strong>.TotoroAbs { position: absolute; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;top: 33em;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;left: 24em;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;z-index: 4;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} </strong></p>
+        <p><strong>.chimpAbs { position: absolute; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;top: 28em;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;left: 20em;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;z-index: 3;<br>
+} <br>
+        </strong></p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>This example also shows that absolutely-positioned elements can overlap
+          (more about that later). This ability to overlap can be used for many
+          interesting effects we will discuss some of these in a later class).
+          I have positioned these images with em units so that if the text size
+          is changed, they should still be in about the same positions with respect
+          to the text.</p>
+        <div id="leftbox">
+          <p>This block of text is another division (which is really inside the
+            division on the right with the white background). It has been positioned
+            over here with this style:</p>
+          <p><strong>#leftbox {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;width: 190px; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;position: absolute;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;top: 37em;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;left: -220px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;background-color: &nbsp;&nbsp;&nbsp;&nbsp;yellow; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;padding: 10px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}</strong></p>
+        </div>
+        <p>There is another example on the left here. The yellow box is really
+          a division that is inside this white div (in the HTML static flow),
+          and it has been positioned absolutely over to the left of this div.
+          Note that when you are positioning paragraphs or divisions, you will
+          need to specify a width for the element.</p>
+      </div>
+      <p>The position property is NOT inherited.</p>
+      <p>&nbsp;</p>
+      <h4>Z-index (Who is in Front?)</h4>
+      <p>If positioned elements overlap (which can happen with relative, absolute,
+	  and fixed positioning) you can specify which element is in front (the one
+	  that covers up the other) with the <strong>z-index</strong> property.</p>
+	<p>In the example above (in the white div) the Chimp came after the Totoro in
+	  the flow of the HTML, so the Chimp would normally be in front, BUT notice
+	  that I assigned z-index values to them. Because Totoro has the larger value,
+	  he is in front.</p>
+	<p>The z-index values are positive or negative integers. The element with a
+	  larger z-index appears in front of one with a smaller z-index. You do not
+	  have to assign the z-index values in order (you can leaves gaps in the
+	  number sequence). You can use negative z-index values, but these will appear
+	  behind the body content (and could be covered by the body's background
+	  color).</p>
+	<p>Note that an element that is actually located within the HTML code of a parent
+	  section may be positioned anywhere on the screen, but that element
+	  is nested inside the parent section.</p>
+	<p>If you have nested elements that are absolutely positioned and have z-index
+	  values, those items will be placed in order relative to each other, but
+	  the group as a whole will be placed in order of the larger structure according
+	  to the z-index of the parent that they are nested in.</p>
+	<p>The z-index property is NOT inherited.</p>
+	<p>&nbsp;</p>
+	<h4>Fixed Positioning</h4>
+	<p>If you apply <strong>position:fixed</strong> to an element, you can specify
+	  where that element will be located <em>relative to the browser window</em>,
+	  and the element will not move as the Web page is scrolled. 
+	  This allows you to fix elements in place in the browser window. Versions
+	  of Internet Explorer before IE7 do not support fixed positioning.</p>
+	<p>If you do not specify a <strong>top</strong> or <strong>left</strong> (or <strong>bottom</strong> or <strong>right</strong>)
+	  value for the fixed position item, it will appear where it would first
+	  appear in the flow of the page (although some browsers may disagree on
+	  exactly where that is), and then stay fixed to the window there as the
+	  page is scrolled.</p>
+	<div id="fixbox">
+	  <p>I'm fixed in place!<br>
+	    <a href="https://www.unm.edu/~tbeach/IT145/week08/index.html#pagetop">Top</a></p>
+	  </div>
+	<p>An example of a fixed element can be seen in the upper-right corner of your
+	  browser window. There is a small div fixed in place with the style below
+	  (the code for the div actually appears in the HTML flow of this page just
+	  above this paragraph):</p>
+	<p class="indent"><strong>#fixbox {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;width: 70px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;height: 70px;<br>
+&nbsp;&nbsp;&nbsp; position: fixed;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;top: 0; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;right: 0;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;background-color: white;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;padding: 4px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}</strong></p>
+	<p>The fixed div has a link that can take you to the top of this page no matter
+	  where you happen to be scrolled to at the moment. </p>
+	<p>The position property is NOT inherited.</p>
+	<p>&nbsp;</p>
+	<h3>Leveling the Playing Field</h3>
+	<p>Before you start making a Web page layout, you should be aware that different
+	  browsers have slightly different default settings for such things as exactly
+	  how much spacing there is before and after block elements, exactly what
+	  sizes to use for headings, etc. Also, the browsers may differ as to
+	  where spacing needs to be added (some browsers will add spacing before
+	  a paragraph at the start of a table cell, and other browsers won't, for
+	  example).</p>
+	<p>Rather than trying to remember where all these differences are, and having
+	  to deal with them all the time, there are a couple common techniques for
+	  'leveling the playing field' before you start so that you have a better
+	  chance of getting the same results in all browsers.</p>
+	<h4>Method #1: CSS Reset</h4>
+	<p>With this method, you begin your CSS style sheet with styles that will 'zero
+	  out' the default spacing and sizing by making all margins, paddings, etc.,
+	  equal to zero, and setting all font sizes to default 100%, etc. You can
+	  get the CSS style rules from Eric Meyer's Web site at the link below:</p>
+	<p>http://meyerweb.com/eric/tools/css/reset/</p>
+	<p>Note that this is just a starting point -- you then have to go on to define
+	  all of the various spacings and sizes that you want by adding more style
+	  rules to get the design you want. Because of this, it may be easier to
+	  use Method #2 below.</p>
+	<h4>Method #2: Normalize the Default Styles</h4>
+	<p>With this second method, you use a CSS stylesheet that has been written to
+	  make all of the default spacing, sizes, etc., the same for all browsers
+	  by explicity setting these values with CSS style rules (and not leaving
+	  these settings up to the whims of the browser's defaults). All you need
+	  to do is get the <strong>normalize.css</strong> file,
+	  and then link it to your page.</p>
+	<p>You can get the normalize.css file that was created by Nicolas Gallagher
+	  and Jonathan Neal at the link below:</p>
+	<p>http://necolas.github.com/normalize.css/</p>
+	<h4>For Either Method #1 or Method #2...</h4>
+	<p>For either method, you add a link to the external reset or normalize CSS
+	  files by adding a link line in the head of your Web page, like this (for
+	  the Method #2 example):</p>
+	<p class="indent"><strong>&lt;link rel="stylesheet" type="text/css" href="normalize.css" /&gt;</strong></p>
+	<p>Adjust the path to the normalize.css
+	  (or reset.css) file as needed depending on where you store that file in
+	  your site.</p>
+	<p>You could add additional CSS styles of your own to those external files,
+	  BUT for this class I ask that you store any of your own styles in a separate
+	  external CSS file (just add a second link to your own CSS file following
+	  the link to the rest or normalize CSS file) so that I don't have to hunt
+	  around in that default normalize.css file to find YOUR styles. Or store
+	  your own styles in an internal style sheet that comes after the link to
+	  the reset or normalize file.</p>
+	<p>Note that both of the methods above incorporate the CSS rules for making
+	  the new HTML5 elements (such as section, article, header, etc.) show up
+	  as block-level elemnets, so you don't need to add those rules to your own
+	  style sheet if you link to one of these reset or normalize style sheets.</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<h3>Example Page Layouts</h3>
+	<p>Here are some links to pages with example layouts. You can look at the source
+	  code of each page to see the HTML and CSS that makes the page.</p>
+	<p>Note that if your Web site has a common layout used by many of its pages,
+	  you can keep the CSS styles for the layout in an external style sheet that
+	  all of the pages are linked to, and then you can alter the layout of all
+	  those pages at once by modifying the styles in the external sheet.</p>
+	<p>Here is a <a href="https://www.unm.edu/~tbeach/IT145/week08/Centerpage1.html">Fixed-Width Centered layout</a> that
+	  will center the content of your page in a fixed-width division. With a
+	  fixed-width layout you can keep the parts of your Web page from spreading
+	  far apart if the page is viewed on a very wide monitor. Also, lines of
+	  text are hard to read if the lines are very wide (your eye can get lost
+	  when it snaps back to the left to pick up the start of the next line).</p>
+	<p>This <a href="https://www.unm.edu/~tbeach/IT145/week08/Elasticpage1.html">Elastic Centered
+      Layout</a> is the same design as the example above, but all of the dimensions
+      in this version are specified in <strong>em</strong> units,
+      so if the default font size is changed, the page width will change to keep
+      the design looking the same (otherwise the line-wraps would occur in different
+      places).</p>
+	<p>This next sequence of pages shows you how floating sections can be used
+	  to lay out a Web page:</p>
+	<p><a href="https://www.unm.edu/~tbeach/IT145/week08/Float1.html">Float1</a> shows the sections of the page in their
+	  static locations (with background color so you can see the sections).</p>
+	<p><a href="https://www.unm.edu/~tbeach/IT145/week08/Float1b.html">Float1b</a> shows a simple two-column layout with
+	  header. Read the information in the page to see how it is done. The sidebar
+	  is fixed width, while the main section resizes as the window size is changed.</p>
+	<p><a href="https://www.unm.edu/~tbeach/IT145/week08/Float1c.html">Float1c</a> shows how to add another side column for
+	  a three-column layout with header. Read the information in the page to
+	  see how it is done.</p>
+	<p><a href="https://www.unm.edu/~tbeach/IT145/week08/Float1d.html">Float1d</a> shows how to add a footer section for
+	  a three-column layout with header and footer. Read the information in the
+	  page to see how it is done.</p>
+	<p><a href="https://www.unm.edu/~tbeach/IT145/week08/Float1e.html">Float1e</a> shows how the basic float layout can be
+	  used inside a fixed-width centered division. Read the information in the
+	  page to see how it is done.</p>
+	<p><a href="https://www.unm.edu/~tbeach/IT145/week08/Float1f.html">Float1f</a> shows how a background image can be used
+	  in a Float1e layout to help fill a larger monitor. Read the information
+	  in the page to see how it is done.</p>
+	<p>This <a href="https://www.unm.edu/~tbeach/IT145/week08/ZiaSpacemodelers.html">Zia Spacemodelers page</a> also shows
+	  how background images can help fill a wide monitor when you are using a
+	  fixed-width page. (The links on that example page do not work.)</p>
+	<p>This <a href="https://www.unm.edu/~tbeach/IT145/week08/VariableAndFixedWidths.html">Page with Fixed and Variable Width</a> divisions shows how part of you layout
+	  can be absolutely positioned, but you can have one section that expands
+	  as the window is widened.</p>
+	<p>This <a href="https://www.unm.edu/~tbeach/IT145/week08/Percent.html">Percentage Layout</a> shows a three column layout
+	  that have widths expressed in percentages so that the whole page adjusts when
+	  the browser window changes width. Note that this page uses <strong>min-width</strong> and <strong>max-width</strong> properties
+	  to keep the content area from getting squeezed too small or too large.
+	  There is also a <a href="https://www.unm.edu/~tbeach/IT145/week08/Percent2.html">Slightly Different version</a> of
+	  the same page.</p>
+	<p>Here is a <a href="https://www.unm.edu/~tbeach/IT145/week08/Layout2.html">Fixed-Width Layout with Absolute</a> elements.
+	  It includes some examples of absolute positioning.</p>
+	<p>Here is the <a href="https://www.unm.edu/~tbeach/IT145/week08/Layout2withFixed.html">Fixed Positioning Version</a> of
+	  the previous page. Be sure to scroll the two pages to see the difference
+	  in behavior.</p>
+	<p>&nbsp;</p>
+	<p>There are several sites on line that have more examples of how page layout
+	  can be done with CSS. Perhaps they have a layout that you can learn from
+	  to make your own page. Here's an example:</p>
+	<p><a href="http://www.maxdesign.com.au/articles/css-layouts/">http://www.maxdesign.com.au/articles/css-layouts/</a></p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<hr>
+	<hr>
+	<hr>
+	<h3><strong><a name="asg" id="asg"></a>There is no new assignment this week. <br>
+	  Work
+	    on your Midterm Project for next class!</strong></h3>
+	<p>We will be using the material from today in <a href="https://www.unm.edu/~tbeach/IT145/week09/index.html#asg">Assignment
+      8 after our Midterm Project</a>. But you may want to work on this assignment
+      now while the material is still fresh in your mind (assuming you have your
+      midterm assignment done).</p>
+	<p><strong>Reading Assignment:</strong></p>
+	<ul class="style24">
+	  <li>none</li>
+	  </ul>
+      <p class="toplink"><a href="https://www.unm.edu/~tbeach/IT145/week08/index.html#header">Top of Page</a></p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	</div> 
+  <!-- end main -->
+    
+</div> <!-- end wrapper -->
+
+
+
+
+</body></html>
