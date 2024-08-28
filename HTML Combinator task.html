@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<style>
+   div p{
+    color: blue;
+    }
+    div.highlight{
+        background-color: #f0f0f0;
+    }
+    #special.highlight{
+        background-color: white;
+    }
+    input{
+        border: 2px solid red;
+    }
+    .menu>li{
+        margin: 20px;
+    }
+    h2+p{
+        color: green;
+    }
+    span{
+        font-style: italic;
+    }
+    button:hover{
+        background-color: yellow;
+    }
+    li:nth-child(3n){
+        background-color: lightgray;
+    }
+    .note p::before{
+        content:'Note:';
+    }
+    h1,h2,h3{
+        font-weight: bold;
+    }
+    .list>li+li{
+        color: skyblue;
+    }
+    .not:not(input){
+        background-color: #e0e0e0;
+    }
+</style>
+<body>
+    <!-- this is Q1 -->
+    <div class="container">
+        <p>This text should be blue.</p>
+        <p>This text should also be blue.</p>
+    </div>
+    <!-- this is Q2 -->
+    <div class="highlight">This should have a gray background.</div>
+<div id="special" class="highlight">This should not have a gray background.</div> 
+    <!-- this is Q3 -->
+    <input type="text" placeholder="Text input with red border">
+    <input type="submit" value="Submit">
+    <!-- this is Q4 -->
+    <ul class="menu">
+        <li>First item</li>
+        <li>Second item</li>
+        <ul>
+        <li>Sub-item (no margin)</li>
+        </ul>
+    </ul>
+    <!-- this is Q5 -->
+    <h2>Heading</h2>
+    <p>This paragraph should be green.</p>
+    <p>This paragraph should not be green.</p>
+    <!-- this is Q6 -->
+    <section class="content">
+        <p>Paragraph 1</p>
+        <span>This should also be italic.</span>
+        <span>This should also be italic.</span>
+     </section>
+    <!-- this is Q7    -->
+    <button>Hover over me</button>
+    <button>And me too</button>
+    <!-- this is Q8 -->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3 (should be gray)</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6 (should be gray)</li>
+    </ul>
+    <!-- this is Q9 -->
+    <div class="note">
+        <p>This is an important note.</p>
+        <p>Don't forget this!</p>
+    </div>
+    <!-- this is Q10 -->
+    <h1>Title 1</h1>
+    <h2>Subtitle 2</h2>
+    <h3>Subheading 3</h3>
+    <!-- this is Q11 -->
+    <ul class="list">
+        <li>Item 1 (no color change)</li>
+        <li>Item 2 (should be blue)</li>
+        <li>Item 3 (should be blue)</li>
+    </ul>
+    <!-- this is Q12 -->
+    <form class="not">
+        <input type="text" placeholder="Text input">
+        <input type="email" placeholder="Email input">
+        <input type="submit" value="Submit">
+    </form>
+    <!-- this is Q13 -->
+     
+</body>
+</html>

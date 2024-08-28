@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(203, 188, 51);
+}
+div.parent{
+    display: flex;
+}
+.Pastries{
+    background-color: white;
+    width: 400px;
+    height: 690px;
+    border-radius: 60px;
+    text-align: center;
+    padding: 10px;
+    margin: 40px;
+    
+}
+h1,p{
+    text-align: center;
+}
+hr{
+    border: 3px solid rgb(203,188,51);
+    width: 100%;
+}
+img{
+    width: 70px;
+    height: 55px;
+}
+.names{
+    float: left;
+    padding: none;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.numbers{
+    padding: none;
+    font-size:18px;
+    float: right;
+}
+*{
+    box-sizing: border-box;
+}
+A:hover{
+    color: orange;
+}
