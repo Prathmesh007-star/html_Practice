@@ -1,0 +1,59 @@
+body{
+    margin: 40px;
+}
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 50px;
+}
+.Hamburger{
+    color: red;
+    margin-right: auto;
+    font-size: 1.5em;
+}
+li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+    justify-content: flex-end;
+    font-size: 30px;
+    color: blacks;
+}
+li a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.first_img{
+    width: 80px;
+    height: auto;
+}
+.li_red a{
+    color: red;
+}
+.flex-container{
+    margin-left: 50px;
+    display: flex;
+}
+.burgur-img{
+    width: 800px;
+    height: 500px;
+}
+.First-h1{
+    font-size: 70px;
+    color: rgb(39, 35, 50);
+}
+.First-p{
+    font-size: 30px;
+}
+.red-button{
+    background-color: rgb(197, 18, 18);
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+}
