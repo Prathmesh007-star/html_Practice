@@ -34,8 +34,11 @@ li a{
     color: red;
 }
 .flex-container{
-    margin-left: 50px;
+    margin: 50px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
 }
 .burgur-img{
     width: 800px;
@@ -56,4 +59,64 @@ li a{
     width: 100px;
     height: 40px;
     border-radius: 30px;
+}
+.Second-h1{
+    font-size: 70px;
+    color: rgb(39, 35, 50);
+    justify-content: flex-end;
+}
+.Second-p{
+    font-size: 30px;
+    justify-content: flex-end;
+}
+.mid{
+    flex: 0 1 45%;
+}
+.recipie{
+    text-align: center;
+    font-size: 70px;
+}
+.para1{
+    text-align: center;
+    font-size: 30px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.First-img{
+    width:300px;
+    height:200px;
+    border-radius: 30px;
+}
+.Big-Div{
+    width:300px;
+    height: 500px;
+    padding: 20px;
+    box-shadow: 10px 10px 5px grey;
+    border-radius: 30px;
+}
+.para2{
+    font-size: 23px;
+}
+.order-img{
+    width: 300px;
+    height: auto;
+}
+.Middle-Div{
+    width: 1200px;
+    height: 100px;
+    border: 2px solid grey;
+    box-shadow: 10px 10px 5px grey;
+    margin: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    border-radius: 30px;
+}
+footer{
+    background-color: rgb(40, 40, 40);
+    text-align: center;
+    color: white;
+    height: 220px;
 }
