@@ -1,0 +1,61 @@
+header{
+    text-align: center;
+}
+.Container{
+    display: flex;
+}
+.first-img{
+    width: 900px;
+}
+.first-div{
+    width: 900px;
+    padding: 30px;
+    box-shadow: -10px 10px 9px gray;
+    flex-direction: row;
+}
+.right-div{
+    padding: 30px;
+    box-shadow: 10px 10px 20px gray;
+    height: 400px;
+}
+.button{
+    padding: 15px;
+}
+.Girl1{
+    width: 500px;
+    height: 190px;
+}
+.Girl2{
+    width: 900px;
+}
+.list{
+    display: flexbox;
+    height: 500px;
+    width: 500px;
+    box-shadow: 10px 10px 5px grey;
+}
+.inner-list{
+    display: flex;
+    padding: 10px;
+}
+.tags{
+    background-color: grey;
+    padding: 10px;
+    display: flex;
+}
+span{
+    padding: 10px;
+}
+span:hover{
+    background-color: black;
+    color: white;
+}
+footer{
+    background-color: grey;
+    height: 150px;
+    padding: 30px ;
+}
+.button{
+    background-color: black;
+    color: white;
+}
