@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exam form</title>
+</head>
+<style>
+    .main{
+        width: 350px;
+        margin: 30px;
+        border: 2px solid grey;
+    }
+    .image-div{
+        text-align: center;
+        width: 350px;
+        background-image: url(about-img.jpg);
+    }
+    .blank{
+        width: 80px;
+    }
+    textarea{
+        width: 220px;
+        height: 90px;
+    }
+    a{
+        text-decoration: none;
+        padding: 20px;
+        color:white;
+        background-color: blue;
+        border-bottom: 4px solid rgb(17, 6, 84);
+
+    }
+    p{
+        color: blue;
+    }
+    label{
+        color: blue;
+    }
+</style>
+<body>
+    <div class="main">
+        <div class="image-div">
+            <h1 style="color: white;">CONTACT US</h1>
+            <hr>
+            <p style="color: white;">fill out the forms below to learn more!</p>
+        </div>
+        <div style="padding: 20px; margin-left: 20px;">
+            <div style="display: flex; justify-content: space-between;">
+                <div style="width: 160px;">
+                    <label for="fname">First name</label>
+                    <input type="text" class="blank" value="John"><br><br>
+                </div>
+                <div>
+                    <label for="fname" class="second-blank">Last name</label>
+                    <input type="text" class="blank second-blank" value="Smith">
+                </div>
+            </div>
+            <label for="email">E-mail*</label>
+            <input type="email" value="john.smith@gmail.com">
+            <hr>
+            <label for="comments">Comments</label><br>
+            <textarea></textarea><br><br><br>
+            <div style="display: flex;">
+                <div><a href="#">Submit</a></div>
+                <div style="align-items: center;"><p>or press enter</p></div>
+            </div>
+           
+        </div>
+    </div>
+</body>
+</html>
