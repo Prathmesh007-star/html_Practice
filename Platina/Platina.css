@@ -103,3 +103,14 @@ li{
     background-color: white;
     color: black;
 }
+.icon-div{
+    margin: 80px;
+    width: 400px;
+}
+.image{
+    width: 228px;
+}
+textarea{
+    height: 246px;
+    width: 300px;
+}
