@@ -1,0 +1,140 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(./Cafe3.jpeg) center / cover no-repeat;
+    position: relative;
+    background-attachment: fixed;
+}
+.head-link{
+    padding-left: 30px;
+    text-decoration: none;
+    color: white;
+}   
+.nav-bar{
+    position: fixed; 
+    width: 100%;
+    z-index: 1;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5));
+}
+.nav-div{
+    display: flex;
+}
+.middle{
+    color: white;
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    text-align: center;
+    letter-spacing: 0.5rem;
+    font-size: 30px;
+}
+.img{
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: auto;
+}
+.main-div{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+.button{
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    border: solid 5px rgb(158, 14, 14);
+}
+.button:hover{
+    background-color: rgb(155, 7, 7);
+    color: white;
+}
+.inner-div{
+    width: 200px;
+    padding-left: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.inner-div:hover{
+    background-color: rgb(159, 14, 14);
+}
+.background2{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(Cafe1.jpg) center / cover no-repeat;
+    height:200px;
+    position: fixed;
+    width: 100%;
+    position: relative;
+    background-attachment: fixed;
+    text-align: center;
+} 
+.pos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background2 div{
+    z-index: 3;
+    color: azure;
+    justify-content: center;
+    align-items: center;
+}
+.pos p{
+    color: red;
+    font-size: xx-large;
+}
+.flip-card {
+    background-color: transparent;
+    padding: 30px;
+    width: 250px;
+    height: 350px;
+    perspective: 1000px;
+    border-radius: 40px;
+  }
+  
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 40px;
+}
+  
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+  
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+  
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+    border-radius: 40px;
+}
+.flip-img{
+    margin-top: 30px;
+    padding: 40px;
+    font-size: 20px;
+    text-align: center;
+    color: red;
+}
+.flip-card-back {
+    background-color: rgb(236, 234, 234);
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 40px;
+}
+  
