@@ -137,4 +137,92 @@ header{
     transform: rotateY(180deg);
     border-radius: 40px;
 }
-  
+form input{
+    border: none;
+}
+.form-layout{
+    width: 550px;
+}
+.form-layout h2{
+    color: red;
+    margin-left: 25px;
+}
+form button{
+    text-align: right;
+}
+textarea{
+    width: 500px;
+    height: 100px;
+}
+input{
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+form{
+    margin-left: 30px;
+}
+button{
+    padding: 10px 25px;
+    margin-left: 385px;
+    font-size: large;
+}
+button:hover{
+    color: white;
+    background-color: red;
+    border-radius: 4px;
+    border: none;
+}
+.flex6{
+    display: flex;
+    justify-content: space-around;
+    margin-right:100px
+}
+.flex6 h2{
+    color: red;
+}
+.background3{
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(map4.jpeg) center / cover no-repeat;
+    height:200px;
+    position: fixed;
+    width: 100%;
+    position: relative;
+    background-attachment: fixed;
+    text-align: center;
+}
+.background3 div{
+    z-index: 3;
+    color: azure;
+    justify-content: center;
+    align-items: center;
+}
+.bg-image{
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    vertical-align: middle;
+    border-radius: 20px;
+    height: fit-content;
+    width: fit-content;
+}
+footer{
+    margin-left: 350px;
+}
+footer img{
+    width: 30px;
+    padding: 15px;
+}
+footer p{
+    color: grey;
+    margin-left:30px;
+}
+footer a{
+    color: gray;
+    text-decoration: none;
+}
+footer span:hover{
+    color: brown;
+}
+.pos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

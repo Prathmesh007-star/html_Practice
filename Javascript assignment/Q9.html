@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Q9.Calculate the average of the numbers in an array of numbers</h1>
+    <P id="demo"></P>
+
+    <script>
+        function calculateAverage(numbers) {
+    if (numbers.length === 0) return 0; 
+
+    let sum = 0;
+
+    for (let i = 0; i < numbers.length; i++) {
+        sum += numbers[i];
+    }
+
+    return sum / numbers.length; 
+}
+
+const array = [10, 20, 30, 40, 50];
+const average = calculateAverage(array);
+console.log(`The average is: ${average}`);
+
+document.getElementById("demo").innerHTML=average;
+
+    </script>
+</body>
+</html>
